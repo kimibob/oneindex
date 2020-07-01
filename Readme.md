@@ -56,3 +56,7 @@
 
 - `/var/www/html/cache`：缓存存储目录
 - `/var/www/html/config`：配置文件存储目录
+
+
+生成的client secret一定不能有+号，到最后绑定微软账号是会出现程序安装失败：
+这时就要返回上一步，重新生成那俩id（确保生成的client secret没有+号即可）。再一步步操作即可。如果还是绑定失败可以进azure（https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade） 把相应的应用先删除：
